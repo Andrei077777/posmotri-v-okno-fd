@@ -13,9 +13,12 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -49,13 +52,9 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
 /* Лейаут */
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
+
 .content {
   display: flex;
   justify-content: center;
@@ -72,7 +71,7 @@ ol {
 }
 
 .content__list-container {
-  overflow: scroll; 
+  overflow: auto; 
   height: 298px;
   gap:30px;
 }
@@ -112,6 +111,7 @@ ol {
 }
 
 .content__video-card-thumbnail {
+    margin-right: 1px;
     height:103px;
     min-width: 194px; 
     object-fit: cover; 
@@ -119,6 +119,7 @@ ol {
 }
 
 .content__video-card-description-container {
+  width: 196px;
   height: 100%;
   flex-grow: 1;
 }
@@ -132,17 +133,18 @@ ol {
 }
 
 .title {
-  margin-bottom: 26px;
+  margin-bottom: 23px;
+  margin-right: 139px;
   font-size: 75px;
   font-style: bold;
   font-weight: 700;
-  font-family: 'Oswald';
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   line-height: 94%;
 }
 
 .content__accent {
-  opacity: 0.2;
+  color: #545050;
 }
 
 .content__card-link {
@@ -152,7 +154,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-style: bold;
   font-size: 30px;
@@ -164,7 +166,12 @@ ol {
 }
 
 .content__video-card-description {
+  margin-top: 6px;
+  margin-left: 2px;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   overflow: hidden;
   line-height: 16.2px;
 }
@@ -186,8 +193,13 @@ ol {
   gap: 15px;
 }
 
+.search-form__label-text {
+  margin-right: 3px;
+}
+
 .search-form__fieldset {
   border: none;
+  gap: 40px;
 }
 
 /* обёртки для поискового инпута и чекбоксов */
@@ -210,10 +222,15 @@ ol {
   appearance: none;
   cursor: pointer;
   color: #FFF;
+  width: 225px;
+  height: 27px;
 }
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
+  font-size: 18px;
+  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+  font-style: normal;
 }
 
 .search-form__textfield:focus {
@@ -233,6 +250,7 @@ ol {
   width: 19px;
   height: 19px;
   padding: 1px;
+  margin-right: 1.5px;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -267,7 +285,7 @@ ol {
   border: 1px solid #FFF;
   background-color: transparent;
   color: #FFF;
-  font-family: 'Fira Sans Cindensed';
+  font-family: 'Fira Sans Cindensed', Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-style: bold;
   font-size: 18px;
@@ -291,7 +309,7 @@ ol {
 }
 
 .button:active {
-  background-color: rgb(255 255 255 / 0.2);
+  background-color: #545050;
 }
 
 .button:focus {
@@ -309,7 +327,7 @@ ol {
 }
 
 .content__card-link_current:active {
-  background-color: rgb(255 255 255 / 0.2);
+  background-color: #545050;
 }
 
 .content__card-link_current:hover{
