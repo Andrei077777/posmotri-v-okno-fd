@@ -151,6 +151,8 @@ ol {
   display: block;
   text-decoration: none;
   color: white;
+  outline: 1px solid white; 
+  background-color: transparent;
 }
 
 .content__video-card-title {
@@ -218,7 +220,7 @@ ol {
   border-bottom: 1px solid #ffffff;
   border-left: none;
   border-right: none;
-  background-color: black;
+  background-color: transparent;
   appearance: none;
   cursor: pointer;
   color: #FFF;
@@ -285,10 +287,10 @@ ol {
   border: 1px solid #FFF;
   background-color: transparent;
   color: #FFF;
-  font-family: 'Fira Sans Cindensed', Arial, Helvetica, sans-serif;
+  font-family: 'Fira Sans Cindensed', Arial, sans-serif;
   font-weight: 700;
   font-style: bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 100%;
   cursor: pointer;
 }
@@ -322,10 +324,6 @@ ol {
 
 /* Состояния карточек */
 
-.content__card-link_current {
-  background-color: #1b1919;
-}
-
 .content__card-link_current:active {
   background-color: #545050;
 }
@@ -338,8 +336,8 @@ ol {
   outline: none; 
 }
 
-.content__card-link_current {
-  outline: 1px solid white; 
+.content__card-link {
+  text-decoration: underline;
 }
 
 .content__list-item {
