@@ -336,7 +336,7 @@ ol {
   outline: none; 
 }
 
-.content__card-link {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
