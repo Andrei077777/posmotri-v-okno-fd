@@ -288,11 +288,10 @@ ol {
   border: 1px solid #FFF;
   background-color: transparent;
   color: #FFF;
-  font-family: 'Fira Sans Cindensed', Arial, sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-weight: 700;
   font-style: bold;
-  /* font-size: 18px; ставлю этот размер, визуально выходит не по макету */
-  font-size: 16px; /* ставлю этот размер, визуально выходит по макету, но по значению не как в макете*/
+  font-size: 18px; 
   line-height: 100%;
   cursor: pointer;
 }
@@ -328,7 +327,6 @@ ol {
 
 .content__card-link_current {
   background-color: rgb(84, 80, 80);
-  /* background-color: #545050; - это тот же цвет что и выше*/
 }
 
 .content__card-link_current:active {
